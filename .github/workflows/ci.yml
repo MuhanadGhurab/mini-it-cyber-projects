@@ -17,15 +17,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Test file hash verifier
+      - name: Test Python tools
         run: |
           python -m pip install -U pip
-          python -m pip install -e "python/file_hash_verifier[dev]"
-          python -m pytest python/file_hash_verifier/tests -q
-      - name: Test log summary
-        run: |
-          python -m pip install -e "python/log_summary[dev]"
-          python -m pytest python/log_summary/tests -q
+          for proj in file_hash_verifier log_summary ioc_text_extractor evidence_manifest_builder; do
+            python -m pip install -e "python/${proj}[dev]"
+            python -m pytest "python/${proj}/tests" -q
+          done
 
   java:
     runs-on: ubuntu-latest

@@ -1,0 +1,4 @@
+Synthetic lab evidence note.
+No credentials.
+Host label: WIN-CLIENT-01
+Zone: Client (10.10.30.0/24 example)

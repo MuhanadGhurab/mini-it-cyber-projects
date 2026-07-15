@@ -6,8 +6,14 @@
 - Log summary utility (Python)
 - RBAC simulator (Java)
 
+## Done (MGH.GITHUB.ECOSYSTEM.2)
+
+- IOC text extractor (Python)
+- Evidence manifest builder (Python)
+
 ## Next
 
-- Password-policy helper (defensive)
-- Windows event log summary (PowerShell) when host tooling is ready
+- Password-policy helper for lab exports only
+- Windows event log triage helper (PowerShell or Python)
+- CSV asset inventory validator
 - One cybersecurity learning game after tests remain green

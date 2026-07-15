@@ -1,0 +1,6 @@
+Lab alert note (synthetic):
+Source host 10.10.30.20 tried multiple failed logons against lab.local.
+Related domain: example-malware.test
+Payload URL: https://example-malware.test/payload
+SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+Analyst contact for this exercise: analyst@lab.local
