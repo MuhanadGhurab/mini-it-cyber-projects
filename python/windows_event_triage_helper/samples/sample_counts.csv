@@ -1,0 +1,6 @@
+event_id,count,label
+4624,2,Successful logon
+4625,3,Failed logon
+4688,1,Process creation
+4740,1,Account locked out
+9999,1,Unknown / unlisted

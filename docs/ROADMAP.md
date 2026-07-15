@@ -11,9 +11,13 @@
 - IOC text extractor (Python)
 - Evidence manifest builder (Python)
 
+## Done (MGH.GITHUB.ECOSYSTEM.3)
+
+- Windows Event Triage Helper (Python)
+- Interview walkthrough documentation
+
 ## Next
 
 - Password-policy helper for lab exports only
-- Windows event log triage helper (PowerShell or Python)
 - CSV asset inventory validator
 - One cybersecurity learning game after tests remain green

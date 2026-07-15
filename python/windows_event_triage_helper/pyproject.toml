@@ -1,0 +1,26 @@
+[project]
+name = "windows-event-triage-helper"
+version = "0.1.0"
+description = "Defensive triage helper for exported Windows Event Log CSV/JSON"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Muhanad Ghurab" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+windows-event-triage-helper = "windows_event_triage_helper.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

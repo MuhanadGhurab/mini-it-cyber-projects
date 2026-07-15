@@ -1,3 +1,9 @@
+## [2026-07-15] — MGH.GITHUB.ECOSYSTEM.3
+
+- Windows Event Triage Helper with CSV/JSON samples, Markdown report sample, and tests
+- Interview walkthrough documentation for the defensive toolset
+- CI updated to include the new Python package
+
 ## [2026-07-15] — MGH.GITHUB.ECOSYSTEM.2
 
 - IOC text extractor with samples and tests

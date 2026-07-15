@@ -18,47 +18,30 @@ Small scripts do not each deserve a separate GitHub repository. This structure p
 | Log Summary Utility | Python 3.12+ | Functional Prototype | [`python/log_summary`](python/log_summary) |
 | IOC Text Extractor | Python 3.12+ | Functional Prototype | [`python/ioc_text_extractor`](python/ioc_text_extractor) |
 | Evidence Manifest Builder | Python 3.12+ | Functional Prototype | [`python/evidence_manifest_builder`](python/evidence_manifest_builder) |
+| Windows Event Triage Helper | Python 3.12+ | Functional Prototype | [`python/windows_event_triage_helper`](python/windows_event_triage_helper) |
 | RBAC Simulator | Java 17+ | Functional Prototype | [`java/rbac-simulator`](java/rbac-simulator) |
+
+Interview talking points: [`docs/INTERVIEW-WALKTHROUGH.md`](docs/INTERVIEW-WALKTHROUGH.md)
 
 ## Safety
 
 - Defensive / educational use only
 - No credential theft, malware, persistence, phishing, or exploitation tooling
 - No scanning of networks you do not own
+- No live Windows Event Log connections from the triage helper
 - Each tool README includes a defensive-use statement and limitations
-
-## Structure
-
-```text
-mini-it-cyber-projects/
-├── python/
-│   ├── file_hash_verifier/
-│   ├── log_summary/
-│   ├── ioc_text_extractor/
-│   └── evidence_manifest_builder/
-├── java/
-│   └── rbac-simulator/
-├── docs/
-└── README.md
-```
 
 ## Testing
 
 ```bash
-python -m pip install -e "python/file_hash_verifier[dev]"
-python -m pytest python/file_hash_verifier/tests -q
-python -m pip install -e "python/log_summary[dev]"
-python -m pytest python/log_summary/tests -q
-python -m pip install -e "python/ioc_text_extractor[dev]"
-python -m pytest python/ioc_text_extractor/tests -q
-python -m pip install -e "python/evidence_manifest_builder[dev]"
-python -m pytest python/evidence_manifest_builder/tests -q
+for proj in file_hash_verifier log_summary ioc_text_extractor evidence_manifest_builder windows_event_triage_helper; do
+  python -m pip install -e "python/${proj}[dev]"
+  python -m pytest "python/${proj}/tests" -q
+done
 
 # Java (requires JDK 17+)
 cd java/rbac-simulator && mvn test
 ```
-
-GitHub Actions runs Python and Java tests.
 
 ## License
 

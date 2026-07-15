@@ -1,0 +1,26 @@
+[
+  {
+    "TimeCreated": "2026-07-15T09:00:00Z",
+    "EventID": 4625,
+    "TargetUserName": "lab-user1",
+    "IpAddress": "10.10.30.20"
+  },
+  {
+    "TimeCreated": "2026-07-15T09:00:05Z",
+    "EventID": 4625,
+    "TargetUserName": "lab-user1",
+    "IpAddress": "10.10.30.20"
+  },
+  {
+    "TimeCreated": "2026-07-15T09:01:00Z",
+    "EventID": 4720,
+    "TargetUserName": "lab-temp",
+    "IpAddress": "10.10.20.10"
+  },
+  {
+    "TimeCreated": "2026-07-15T09:02:00Z",
+    "EventID": 7045,
+    "TargetUserName": "SYSTEM",
+    "IpAddress": "-"
+  }
+]
