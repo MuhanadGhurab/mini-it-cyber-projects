@@ -1,4 +1,10 @@
-## [2026-07-15] — MGH.GITHUB.ECOSYSTEM.3
+# Changelog
+
+## [2026-07-17] — MGH.PROGRAM.ENGINEERING.1
+
+### Added
+
+- `python/dependency_pin_checker` defensive supply-chain hygiene utility
 
 - Windows Event Triage Helper with CSV/JSON samples, Markdown report sample, and tests
 - Interview walkthrough documentation for the defensive toolset

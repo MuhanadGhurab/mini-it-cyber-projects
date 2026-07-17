@@ -1,0 +1,26 @@
+[project]
+name = "dependency-pin-checker"
+version = "0.1.0"
+description = "Defensive checker for unpinned or wildcard dependency declarations"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Muhanad Ghurab" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+dependency-pin-checker = "dependency_pin_checker.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

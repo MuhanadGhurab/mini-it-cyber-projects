@@ -20,7 +20,7 @@ jobs:
       - name: Test Python tools
         run: |
           python -m pip install -U pip
-          for proj in file_hash_verifier log_summary ioc_text_extractor evidence_manifest_builder windows_event_triage_helper; do
+          for proj in file_hash_verifier log_summary ioc_text_extractor evidence_manifest_builder windows_event_triage_helper dependency_pin_checker dependency_pin_checker; do
             python -m pip install -e "python/${proj}[dev]"
             python -m pytest "python/${proj}/tests" -q
           done

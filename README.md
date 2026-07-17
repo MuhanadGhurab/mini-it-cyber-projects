@@ -19,6 +19,7 @@ Small scripts do not each deserve a separate GitHub repository. This structure p
 | IOC Text Extractor | Python 3.12+ | Functional Prototype | [`python/ioc_text_extractor`](python/ioc_text_extractor) |
 | Evidence Manifest Builder | Python 3.12+ | Functional Prototype | [`python/evidence_manifest_builder`](python/evidence_manifest_builder) |
 | Windows Event Triage Helper | Python 3.12+ | Functional Prototype | [`python/windows_event_triage_helper`](python/windows_event_triage_helper) |
+| Dependency Pin Checker | Python 3.12+ | Functional Prototype | [`python/dependency_pin_checker`](python/dependency_pin_checker) |
 | RBAC Simulator | Java 17+ | Functional Prototype | [`java/rbac-simulator`](java/rbac-simulator) |
 
 Interview talking points: [`docs/INTERVIEW-WALKTHROUGH.md`](docs/INTERVIEW-WALKTHROUGH.md)
@@ -34,7 +35,7 @@ Interview talking points: [`docs/INTERVIEW-WALKTHROUGH.md`](docs/INTERVIEW-WALKT
 ## Testing
 
 ```bash
-for proj in file_hash_verifier log_summary ioc_text_extractor evidence_manifest_builder windows_event_triage_helper; do
+for proj in file_hash_verifier log_summary ioc_text_extractor evidence_manifest_builder windows_event_triage_helper dependency_pin_checker; do
   python -m pip install -e "python/${proj}[dev]"
   python -m pytest "python/${proj}/tests" -q
 done
